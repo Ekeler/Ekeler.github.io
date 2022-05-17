@@ -1,5 +1,5 @@
 <script>
-  function() {
+  const addPolygon = async function() {
    try {
     await ethereum.request({
       method: 'wallet_switchEthereumChain',
@@ -33,4 +33,6 @@
     // handle other "switch" errors
   }
 }
+
+addPolygon();
 </script>
